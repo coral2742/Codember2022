@@ -1,23 +1,33 @@
-f = open("users.txt","r",)
-lines = f.readlines()
 validUsers = 0
+lastValidUsername = ""
 
-for i in range(len(lines)):
+# Un usuario válido tiene:
+    # usr: nombre de usuario
+    # eme: email
+    # psw: contraseña
+    # age: edad
+    # loc: ubicación
+    # fll: número de seguidores
+def isValidUser(dic):
+    return ( dic.get("usr") and dic.get("eme") and dic.get("psw") and dic.get("age") and dic.get("loc") and dic.get("fll") )
+
+# Abrimos el fichero
+with open("users.txt","r",) as f:
+    lines = f.read()
+
+# Separamos los usuarios por párrafo
+users = lines.split('\n\n')
+
+for i in range(len(users)):
     dic = {}
-    for line in lines[i].split():
-        tag,value = (line.split(":"))
+    user = users[i].split()
+    for user in users[i].split():
+        tag,value = (user.split(":"))
         dic[tag] = value
-    # Comprobamos si tiene todos los campos
-        # Los datos necesarios son
-            # usr: nombre de usuario
-            # eme: email
-            # psw: contraseña
-            # age: edad
-            # loc: ubicación
-            # fll: número de seguidores
-    if (dic.get("usr") and dic.get("eme") and dic.get("psw") and dic.get("age") and dic.get("loc") and dic.get("fll")):
+    if ( isValidUser(dic) ):
         validUsers += 1
         lastValidUsername = dic.get("usr")
 
 print("El número de usuarios válidos es: " + str(validUsers))
 print("El último usuario válido es: " + lastValidUsername)
+print(str(validUsers) + lastValidUsername)

@@ -7,41 +7,114 @@ colors = [
   "red", "blue", "green", "gray", "blue", "red", "blue", "blue", "red", "red", "green", "gray", "green", "red", "green", "red", "green", "red", "green", "red", "green", "red", "green", "red", "green", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "gray", "green", "blue", "gray", "blue", "gray", "green", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "green", "gray", "green", "gray", "red", "red", "red", "green", "blue", "red", "green", "blue", "blue", "red", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "green", "red", "green", "red", "green", "green", "red", "green", "red", "green", "green", "red", "green", "red", "green", "green", "red", "green", "red", "green", "green", "red", "green", "red", "green", "green", "red", "green", "red", "green", "green", "red", "green", "red", "green", "green", "red", "green", "red", "green", "green", "red", "green", "red", "green", "green", "red", "green", "red", "green", "green", "red", "green", "red", "green", "green", "red", "green", "red", "green", "red", "gray", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "red", "green", "green", "red", "green", "red", "green", "green", "red", "green", "red", "green", "green", "red", "green", "red", "green", "green", "red", "green", "red", "green", "green", "red", "green", "red", "green", "green", "red", "green", "red", "green", "green", "red", "green", "red", "green", "green", "red", "green", "red", "green", "green", "red", "green", "red", "green", "green", "red", "green", "red", "red", "blue", "green", "gray", "blue", "red", "blue", "blue", "red", "red", "green", "gray", "green", "red", "green", "red", "green", "red", "green", "red", "green", "red", "green", "red", "green", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "gray", "green", "blue", "gray", "blue", "gray", "green", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "green", "gray", "green", "gray", "red", "red", "red", "green", "blue", "red", "green", "blue", "blue", "red", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "green", "red", "green", "red", "green", "green", "red", "green", "red", "green", "green", "red", "green", "red", "green", "green", "red", "green", "red", "green", "green", "red", "green", "red", "green", "green", "red", "green", "red", "green", "green", "red", "green", "red", "green", "green", "red", "green", "red", "green", "green", "red", "green", "red", "green", "green", "red", "green", "red", "green", "green", "red", "green", "red", "green", "green", "red", "green", "red", "green", "red", "gray", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "red", "green", "green", "red", "green", "red", "blue", "green", "gray", "blue", "red", "blue", "blue", "red", "red", "green", "gray", "green", "red", "green", "red", "green", "red", "green", "red", "green", "red", "green", "red", "green", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "gray", "green", "blue", "gray", "blue", "gray", "green", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "green", "gray", "green", "gray", "red", "red", "red", "green", "blue", "red", "green", "blue", "blue", "red", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "green", "red", "green", "red", "green", "green", "red", "green", "red", "green", "green", "red", "green", "red", "green", "green", "red", "green", "red", "green", "green", "red", "green", "red", "green", "green", "red", "green", "red", "green", "green", "red", "green", "red", "green", "green", "red", "green", "red", "green", "green", "red", "green", "red", "green", "green", "red", "green", "red", "green", "green", "red", "green", "red", "green", "green", "red", "green", "red", "green", "red", "gray", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "red", "green", "green", "red", "green", "red", "blue", "green", "gray", "blue", "red", "blue", "blue", "red", "red", "green", "gray", "green", "red", "green", "red", "green", "red", "green", "red", "green", "red", "green", "red", "green", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "gray", "green", "blue", "gray", "blue", "gray", "green", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "green", "gray", "green", "gray", "red", "red", "red", "green", "blue", "red", "green", "blue", "blue", "red", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "green", "red", "green", "red", "green", "green", "red", "green", "red", "green", "green", "red", "green", "red", "green", "green", "red", "green", "red", "green", "green", "red", "green", "red", "green", "green", "red", "green", "red", "green", "green", "red", "green", "red", "green", "green", "red", "green", "red", "green", "green", "red", "green", "red", "green", "green", "red", "green", "red", "green", "green", "red", "green", "red", "green", "green", "red", "green", "red", "green", "red", "gray", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "red", "green", "green", "red", "green", "red", "blue", "green", "gray", "blue", "red", "blue", "blue", "red", "red", "green", "gray", "green", "red", "green", "red", "green", "red", "green", "red", "green", "red", "green", "red", "green", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "gray", "green", "blue", "gray", "blue", "gray", "green", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "green", "gray", "green", "gray", "red", "red", "red", "green", "blue", "red", "green", "blue", "blue", "red", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "green", "red", "green", "red", "green", "green", "red", "green", "red", "green", "green", "red", "green", "red", "green", "green", "red", "green", "red", "green", "green", "red", "green", "red", "green", "green", "red", "green", "red", "green", "green", "red", "green", "red", "green", "green", "red", "green", "red", "green", "green", "red", "green", "red", "green", "green", "red", "green", "red", "green", "green", "red", "green", "red", "green", "green", "red", "green", "red", "green", "red", "gray", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red", "red", "green", "green", "red", "green", "pink"
 ]
 
-maxCounter = 0
+## PRUEBAS
+# ['red', 'blue', 'red', 'blue', 'green'] -> 4, blue
+# ['green', 'red', 'blue', 'gray'] -> 2, gray
+# ['blue', 'blue', 'blue', 'blue'] -> 1, blue
+# ['red', 'green', 'red', 'green', 'red', 'green'] -> 6, green
+# ['blue', 'red', 'blue', 'red', 'gray'] -> 4, red
+# ['red', 'red', 'blue', 'red', 'red', 'red', 'green'] -> 3, red
+# ['red', 'blue', 'red', 'green', 'red', 'green', 'red', 'green'] -> 6, green
+
+
+colors = ['red', 'blue', 'red', 'blue', 'green']
+colors = ['green', 'red', 'blue', 'gray']
+colors = ['blue', 'blue', 'blue', 'blue']
+colors = ['red', 'green', 'red', 'green', 'red', 'green']
+colors = ['blue', 'red', 'blue', 'red', 'gray']
+#colors = ['red', 'red', 'blue', 'red', 'red', 'red', 'green']
+
+maxCounter = 2
 lastColor1 = colors[0]
 lastColor2 = colors[1]
 
 maxColorLast = ""
 counter = 0
 
-# Mientras queden colores
-for i in range (2, len(colors) - 1):
-    # Obtenemos el tercer color
-    color = colors[i]
 
-    # Comprobamos si el primero es igual al tercero
-    if (lastColor1 == color):
-        counter += 1
-        print("ALCANZADO " + str(counter) + " " + lastColor1 + " " + lastColor2 + " " + color)
-        # Actualizamos contador
-        if (counter > maxCounter):
-            maxCounter = counter
-            maxColorLast = lastColor2
-            #print("MÁXIMO ALCANZADO " + str(maxCounter) + " " + lastColor1 + " " + lastColor2 + " " + color)
-        # El primer color pasa a ser el segundo
-        # El segundo color pasa a ser el primero
+
+
+# Mientras queden colores
+for i in range (2, len(colors)):
+    if (lastColor1 == lastColor2):
+        maxCounter = 1
+        counter = 0
+    else:
+        # Obtener tercer color
+        color = colors[i]
+        # Si tercero y primero son iguales
+        if (lastColor1 == color):
+            if (counter == 0):
+                counter = 2
+            counter += 1
+            maxColorLast = color
+
+
+            # Actualizamos maxCounter
+            if (counter > maxCounter):
+                maxCounter = counter
+
+        else:
+            counter = 0
+        
         lastColor1 = lastColor2
         lastColor2 = color
+
+    
+
+if (maxColorLast == ""):
+    maxColorLast = colors[-1]
+        
+
+print(str(maxCounter) + "@" + maxColorLast)
+
+
+
+
+
+
+
+
+
+
+
+# colors = ['red', 'blue', 'red', 'blue', 'green']
+
+# maxCounter = 0
+# lastColor1 = colors[0]
+# lastColor2 = colors[1]
+
+# maxColorLast = ""
+# counter = 0
+
+# # Mientras queden colores
+# for i in range (2, len(colors) - 1):
+#     # Obtenemos el tercer color
+#     color = colors[i]
+
+#     # Comprobamos si el primero es igual al tercero
+#     if (lastColor1 == color):
+#         counter += 1
+#         print("ALCANZADO " + str(counter) + " " + lastColor1 + " " + lastColor2 + " " + color)
+#         # Actualizamos contador
+#         if (counter > maxCounter):
+#             maxCounter = counter
+#             maxColorLast = lastColor2
+#             #print("MÁXIMO ALCANZADO " + str(maxCounter) + " " + lastColor1 + " " + lastColor2 + " " + color)
+#         # El primer color pasa a ser el segundo
+#         # El segundo color pasa a ser el primero
+#         lastColor1 = lastColor2
+#         lastColor2 = color
 
 
             
 
-    # No se sigue el orden
-    else:
-        # El primer color p
-        counter = 0
-        lastColor1 = lastColor2
-        lastColor2 = color
+#     # No se sigue el orden
+#     else:
+#         # El primer color p
+#         counter = 0
+#         lastColor1 = lastColor2
+#         lastColor2 = color
 
 
 
@@ -49,5 +122,5 @@ for i in range (2, len(colors) - 1):
 
 
 
-print(maxColorLast)
-print(maxCounter)
+# print(maxColorLast)
+# print(maxCounter)

@@ -115,39 +115,26 @@ mecenas = [
     "CarlesSànchez"
 ]
 
-def next(vivosMecenas):
-    proxAtaque = -1
-    for ataque in range(0, len(vivosMecenas), 1):
-        if (vivosMecenas[ataque] == True):
-            print(ataque)
-            return ataque
-    return proxAtaque
+i = 0;
+offset = 1;
+deleteCount = mecenas.length;
+survivorName = ""
+survivorIndex = -1
 
-vivos = len(mecenas)
+while(deleteCount > 1):
+    if (mecenas[i % mecenas.length] == ''):
+        i += 1
+        continue
 
-vivosMecenas = []
+    if (mecenas[(i + offset) % mecenas.length] == ''):
+        offset += 1
+        continue
 
+    mecenas[(i + offset) % mecenas.length] = ''
 
-for i in range (0,len(mecenas),1):
-    vivosMecenas.append(True)
-
-indice = 0
-ataque = indice + 1
-
-# Mientras haya vivos
-while (vivos > 1):
-    indice = next(vivosMecenas)
-    vivosMecenas[indice] = False
-    ataque = next(vivosMecenas)
-    vivosMecenas[indice] = True
-
-
-    vivos = vivos - 1
-    vivosMecenas[ataque] = False
-
-            
-                
-
-print(vivosMecenas)
-
-print("submit " + str(indice) + "-" + mecenas[indice])
+    survivorIndex = i % mecenas.length
+    survivorName = mecenas[i % mecenas.length]
+    
+    i += offset+1
+    offset = 1
+    deleteCount -= 1

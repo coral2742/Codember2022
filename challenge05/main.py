@@ -115,39 +115,28 @@ mecenas = [
     "CarlesSànchez"
 ]
 
-def next(vivosMecenas):
-    proxAtaque = -1
-    for ataque in range(0, len(vivosMecenas), 1):
-        if (vivosMecenas[ataque] == True):
-            print(ataque)
-            return ataque
-    return proxAtaque
+# Hacemos una lista de índices
+indexMecenas = list(range(len(mecenas)))
+indexSuperviviente = -1
+vivosCounter = len(indexMecenas)
 
-vivos = len(mecenas)
+while (vivosCounter != 1):
+    vivosCounter = len(indexMecenas)
+    # En cada ronda matan a la mitad 
+    vivosCounter = vivosCounter//2
+    vivos = []
+    for superviviente in range(vivosCounter):
+        vivos.append(indexMecenas[superviviente*2])
+    # Si los vivos son un número impar, al primero le mata el último 
+    if len(indexMecenas) % 2 != 0:
+        vivos.pop(0)
+        vivos.append(indexMecenas[len(indexMecenas)-1])
 
-vivosMecenas = []
+    indexMecenas = vivos
+    vivosCounter = len(indexMecenas)
+    # Si sólo queda uno
+    if vivosCounter == 1:
+        indexSuperviviente = indexMecenas[0]
+  
 
-
-for i in range (0,len(mecenas),1):
-    vivosMecenas.append(True)
-
-indice = 0
-ataque = indice + 1
-
-# Mientras haya vivos
-while (vivos > 1):
-    indice = next(vivosMecenas)
-    vivosMecenas[indice] = False
-    ataque = next(vivosMecenas)
-    vivosMecenas[indice] = True
-
-
-    vivos = vivos - 1
-    vivosMecenas[ataque] = False
-
-            
-                
-
-print(vivosMecenas)
-
-print("submit " + str(indice) + "-" + mecenas[indice])
+print(mecenas[indexSuperviviente] + "-" + str(indexSuperviviente))

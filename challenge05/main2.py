@@ -115,26 +115,28 @@ mecenas = [
     "CarlesSànchez"
 ]
 
-i = 0;
-offset = 1;
-deleteCount = mecenas.length;
-survivorName = ""
-survivorIndex = -1
 
-while(deleteCount > 1):
-    if (mecenas[i % mecenas.length] == ''):
-        i += 1
-        continue
+def hungry_games(index):
+    vivosCounter = len(index)
+    # Si sólo queda uno
+    if vivosCounter == 1: 
+        return index[0]
+    # En cada ronda matan a la mitad 
+    vivosCounter = vivosCounter//2
+    vivos = []
+    for superviviente in range(vivosCounter):
+        vivos.append(index[superviviente*2])
+    # Si los vivos son un número impar, al primero le mata el último 
+    if len(index) % 2 != 0:
+        vivos.pop(0)
+        vivos.append(index[len(index)-1])
 
-    if (mecenas[(i + offset) % mecenas.length] == ''):
-        offset += 1
-        continue
+    index = vivos
 
-    mecenas[(i + offset) % mecenas.length] = ''
+    return hungry_games(index)
 
-    survivorIndex = i % mecenas.length
-    survivorName = mecenas[i % mecenas.length]
-    
-    i += offset+1
-    offset = 1
-    deleteCount -= 1
+# Hacemos una lista de índices
+index = list(range(len(mecenas)))
+superviviente = hungry_games(index)
+
+print(mecenas[superviviente] + "-" + str(superviviente))
